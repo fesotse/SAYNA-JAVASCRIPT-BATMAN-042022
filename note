@@ -1,0 +1,13 @@
+echo "# SAYNA-JAVASCRIPT-BATMAN-042022" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mashiyyat15/SAYNA-JAVASCRIPT-BATMAN-042022.git
+git push -u origin main
+
+
+
+style
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Space Grotesk', sans-serif;

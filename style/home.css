@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family:'Rajdhani', sans-serif ;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+p.petit{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+button{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    border:none;
+}
+.degrade2{
+    background-image: linear-gradient(to right, #EDDEBF40,#89000860) ;
+    color: #FFFFFFff;
+}
+button.degrade2{
+    opacity: 0.6;
+    background-image: linear-gradient(to right, #EDDEBF40,#89000860) ;
+    color: #FFFFFFff;
+}
+button.degrade2:hover{
+    opacity: 1;
+}
+/* section first */
+section.first{
+    height: 800px;
+    background-image: url(/Assets/Illustrations/Home/Bathome1.png);
+    background-color: #000000;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    padding: 0 102px;
+}
+header{
+    display: flex;
+    height: 132px;
+
+}
+button.nav{
+    padding: 2vh;
+    background-color:transparent;
+}
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.nav a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+a:hover{
+    color:#FFFFFF;
+}
+.flecheRSO{
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+
+/* section second */
+section.second{
+    background-color: #000000;
+    padding: 0 102px;
+}
+.yellow{
+    color: #FFFF00;
+}
+figure{
+    position:relative;
+}
+figcaption{
+    border-top:rosybrown;
+    position:absolute;
+    width: 100%;
+    bottom: 5px;
+}
+figcaption>img{
+    position:absolute;
+    width: 60px;
+    bottom: 12px;
+    left:10px;
+}
+figcaption>p{  
+    position:absolute;
+    bottom: 5px;
+    left:20px;
+    width:80%;
+    height: 50px;
+    margin:0;
+}
+/* section intersection */
+section.intersection{
+    position: relative;
+    height: 75vh;
+    background-color: #000000;
+    background-size: cover;
+}
+.intersection>div{
+    position: absolute;
+    height: 75vh;
+    color:transparent;
+    top:0;
+    margin:0 102px;
+    z-index: 1;
+}
+.intersection>div>div{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* section nemesis */
+section.nemesis{
+    background-color: #000000;
+    padding: 0 102px;
+}
+
+/* section multimedia */
+section.multimedia{
+    background-color: #000000;
+    padding: 0 102px;
+}
+.degrade1{
+    background-image: linear-gradient(to right, #EDDEBF40,#19587D40) ;
+}
+.minislider{
+    width: 500px;
+}
+/* section contact */
+.contact{
+    position: relative;
+    background-image: linear-gradient(to right, #4d493f,#0c202b);
+    padding:0 102px ;
+    height: 515px;
+}
+.contact>form{
+    width: 100%;
+}
+form input{
+    background-color: transparent;
+    color: transparent;
+    width: 100%;
+    border-style:solid;
+    border-width: 0px 0px  1px 0px;
+}
+input.check{
+    width:20px;
+}
+.contact select{
+    width:100%;
+    background-color: transparent;
+    color:#FFFFFF;
+}
+.contact select option{
+    background: #000000;
+}
+button.borderspecial{
+    border: solid 3px;
+    border-image: linear-gradient(45deg, #EDDEBF40,#19587D60) 1;
+    border-image-slice: fill;
+    background-color: transparent;
+}
+.Popup_box{
+    position: absolute;
+    width: 100%;
+    height: 515px;
+    z-index: 1;
+    top:0;
+    border-radius: 25px;
+}
+/* section citation */
+section.citation{
+    background-color: #000000;
+    padding: 0 102px;
+}
+.circle{
+    height: 20px;
+    color: blue;
+}
+.cit_text2, 
+.cit_text3,
+.cit_text4,
+.cit_text5, 
+.cit_text6,
+.cit_text7,
+.cit_text8, 
+.cit_text9{
+ display: none;
+}
+.citation ul{
+    list-style:none;
+}
+footer{
+    background-color: #000000;
+    padding: 0 102px;
+}
+footer p{
+    margin: 0;
+}
+footer.logo{
+    height: 132px;
+}
