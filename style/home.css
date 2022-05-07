@@ -51,23 +51,24 @@ button.degrade2{
 button.degrade2:hover{
     opacity: 1;
 }
-.visible{
+/* .visible{
     opacity:1;
     transform: translateX(0);
     transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+} */
 .fondu{
     opacity: 0;
+    transition: 750ms;
 }
-.f_visible{
+.fondu.visible{
     opacity:1;
     transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 /* section first */
 section.first{
     height: 800px;
-    background-image: url(/Assets/Illustrations/Home/Bathome1.png);
     background-color: #000000;
+    background-image: url(/Assets/Illustrations/Home/Bathome1.png);
     background-size:cover ;
     background-repeat: no-repeat;
     padding: 0 102px;
@@ -114,12 +115,18 @@ section.second{
 figure{
     position:relative;
 }
+figure:hover{
+    transform: scale(1.2);
+}
 figcaption{
+    display: none;
     border-top:rosybrown;
     position:absolute;
+    opacity:1;
     width: 100%;
     bottom: 5px;
 }
+
 figcaption>img{
     position:absolute;
     width: 60px;

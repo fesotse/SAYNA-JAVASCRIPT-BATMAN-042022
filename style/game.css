@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:black ;
+}
+h1{
+    font-family:'Rajdhani', sans-serif ;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+}
+p.half{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #C4C4C4;
+    width: 50%;
+    padding-left: 5px;
+    margin: 2vh 0;
+}
+button{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    border:none;
+}
+button.degrade2{
+    opacity: 0.6;
+    background-image: linear-gradient(to right, #EDDEBF40,#89000860) ;
+    color: #FFFFFFff;
+    margin: 10px;
+}
+button.degrade2:hover{
+    opacity: 1;
+}
+.fondu{
+    opacity: 0;
+    transition: 750ms;
+}
+.fondu.visible{
+    opacity:1;
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+header{
+    display: flex;
+    height: 132px;
+
+}
+button.nav{
+    padding: 2vh;
+    background-color:transparent;
+}
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.nav a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+a:hover{
+    color:#FFFFFF;
+}
+.flecheRSO{
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+}
+section.first{
+    height: 800px;
+    background-color: #000000;
+    background-image: url(/Assets/Illustrations/Game/Batgame1.png);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    padding: 0 102px;
+}
+section.niveau_1{
+    height: 100%;
+    padding: 0 102px 5vh 102px;
+}
+section.niveau_1>div{
+    padding: 5vh;
+}
+section.niveau_1.Question>span{
+    width: 50%;
+    background-color: #C4C4C4;
+}
+section.niveau_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 102px;
+    padding: 0 102px;
+}
