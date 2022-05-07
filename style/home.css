@@ -253,3 +253,12 @@ footer p{
 footer.logo{
     height: 132px;
 }
+
+/* //iconesizin */
+.fa-brands{
+    color: #FFFFFF;
+    font-size: 25px;
+ }
+ .fa-brands:hover{
+     color:#FFFF00;
+ }
