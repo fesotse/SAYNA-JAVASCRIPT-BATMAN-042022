@@ -51,6 +51,18 @@ button.degrade2{
 button.degrade2:hover{
     opacity: 1;
 }
+.visible{
+    opacity:1;
+    transform: translateX(0);
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.fondu{
+    opacity: 0;
+}
+.f_visible{
+    opacity:1;
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 /* section first */
 section.first{
     height: 800px;
