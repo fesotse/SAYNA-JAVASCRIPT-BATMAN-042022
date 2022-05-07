@@ -40,7 +40,7 @@ const fadeIn = function (entries, observer){
     })
 }
 const observer  =new IntersectionObserver (fadeIn, options);
-document.querySelectorAll('h1').forEach(function(r){
+document.querySelectorAll('.fadein').forEach(function(r){
     observer.observe(r);
 })
 
@@ -56,6 +56,21 @@ const fondu = function (entries, observeri){
 const observei = new IntersectionObserver(fondu, options);
 document.querySelectorAll('.fondu').forEach(function(r){
     observei.observe(r);
+})
+
+//zoom on image
+const zoom = function (entries, observeii){
+    entries.forEach(function (entry){
+        if(entry.intersectionRatio > ratio){
+            entry.target.classList.add('visible');
+            observeii.unobserve(entry.target);
+        }
+    })
+}
+
+const observeii = new IntersectionObserver(zoom, options);
+document.querySelectorAll('.zoom').forEach(function(r) {
+    observeii.observe(r);
 })
 
 // var cit=document.getElementsByClassName("cit")

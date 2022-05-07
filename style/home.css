@@ -51,18 +51,32 @@ button.degrade2{
 button.degrade2:hover{
     opacity: 1;
 }
-/* .visible{
-    opacity:1;
-    transform: translateX(0);
-    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-} */
+/* effect for showing 🌪 */
 .fondu{
     opacity: 0;
     transition: 750ms;
 }
 .fondu.visible{
     opacity:1;
+    transform: translate(1,0);
     transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* effect of zoom 😿🕶 */
+.zoom{
+    transform: scale(0);
+}
+.zoom.visible{
+    transform: scale(1);
+    transition:2s;
+}
+/* fadeinEffect🌶 */
+.fadein{
+    transform: translateX(-50px);
+    opacity: 0;
+}
+.fadein.visible{
+    transform: translateX(0);
+    opacity: 1;
 }
 /* section first */
 section.first{
