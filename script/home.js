@@ -73,29 +73,10 @@ document.querySelectorAll('.zoom').forEach(function(r) {
     observeii.observe(r);
 })
 
-// var cit=document.getElementsByClassName("cit")
-// function diapo(){
-//     let i = 0;
-//     cit[i].style.display = "block";
-//     for (let j=0; j<cit.length; j++){
-//         if (j==i){
-//             cit[j].style.display = "block";
-//         }
-//         else{
-//             cit[j].style.display = "none";
-//         }
-//     }
-//     if (i<cit.length-1){
-//         i++;
-//     }
-//     else{
-//         i = 0;
-//     }
-//     setTimeout("diapo()",3000)
-// }
-// $(window).onload = diapo();
-
-
+//modification du carousel dans la section intersection
+$('.carousel').carousel({
+    pause:'null'
+})
 //show of figcaption in every figure
 const figcap = document.getElementsByTagName('figcaption');
 const fig = document.getElementsByTagName('figure');

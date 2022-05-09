@@ -61,7 +61,7 @@ button.degrade2:hover{
     transform: translate(1,0);
     transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-/* effect of zoom 😿🕶 */
+/* effect of zoom 🕶 */
 .zoom{
     transform: scale(0);
 }
@@ -110,7 +110,7 @@ a:hover{
 .flecheRSO{
     position: absolute;
     right: 50px;
-    z-index: 1;
+    z-index: 2;
 }
 .text{
     display: flex;
