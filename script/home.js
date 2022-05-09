@@ -3,26 +3,8 @@ $(window).scroll(function(){
     let scroll = $(window).scrollTop();
     $('.flecheRSO').css('top',scroll +250+"px" );
 })
-// document.getElementsByClassName('sub').addEventListner("click",agree);
-// function agree(){
 
-//     $(".Popup").style.display = "block";
-// }
 
-// mise en place de batmanslide
-var img = ['Batslider1.png','Batslider2.png','Batslider3.png', 'Batslider4.png', 'Batslider5.png','Batslider6.png','Batslider7.png', 'Batslider8.png','Batslider9.png','Batslider10.png']
-function batslide(){
-    let i = 0;
-    document.slider.src="/Assets/Illustrations/Home/" + img[i];
-    if (i<img.length-1){
-        i++;
-    }
-    else{
-        i=0;
-    }
-    setTimeout("batslide()", 3000); //défilement tous les 3s
-}
-window.onload = batslide;
 const ratio = 0.5;
 //animation sur la page
 const options={
@@ -73,12 +55,9 @@ document.querySelectorAll('.zoom').forEach(function(r) {
     observeii.observe(r);
 })
 
-//modification du carousel dans la section intersection
-$('.carousel').carousel({
-    pause:'null'
-})
+
 //show of figcaption in every figure
-const figcap = document.getElementsByTagName('figcaption');
+const figcap = document.getElementsByClassName('figcap');
 const fig = document.getElementsByTagName('figure');
 const figcap1 = figcap[0];
 const figcap2 = figcap[1];
@@ -92,7 +71,7 @@ const fig3 = fig[2];
 const fig4 = fig[3];
 const fig5 = fig[4];
 const fig6 = fig[5];
-fig1.addEventListener('onmouseover', function(e){
+figcap1.addEventListener('onmouseover', function(e){
     figcap1.style.display = 'block';
 })
 fig1.addEventListener('onmouseout', function(e){
@@ -128,3 +107,14 @@ fig6.addEventListener('onmouseover', function(e){
 fig6.addEventListener('onmouseout', function(e){
     figcap6.style.display = 'none';
 })
+
+document.getElementsByClassName("demo").onmouseover = function() {mouseOver()};
+document.getElementsByClassName("demo").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementsByClassName("demo").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementsByClassName("demo").style.color = "black";
+}

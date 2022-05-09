@@ -129,9 +129,6 @@ section.second{
 figure{
     position:relative;
 }
-figure:hover{
-    transform: scale(1.2);
-}
 figcaption{
     display: none;
     border-top:rosybrown;
@@ -146,6 +143,11 @@ figcaption>img{
     width: 60px;
     bottom: 12px;
     left:10px;
+}
+/* hoveronimg */
+figure.zoom img:hover{
+    transform: scale(1.2);
+    transition: 2s;
 }
 figcaption>p{  
     position:absolute;
